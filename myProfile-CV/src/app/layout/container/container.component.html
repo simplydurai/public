@@ -1,0 +1,25 @@
+
+  <div class="row" *ngIf="hasTitle()">
+    <div class="col-sm-12">
+      <div class="title-box text-center">
+        <h3 class="title-a">
+          {{title}}
+        </h3>
+        <!-- <p class="subtitle-a">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p> -->
+        <div class="line-mf"></div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+    <div class="row">
+            <div class="box-shadow-full">
+                <ng-content></ng-content>
+            </div>
+    </div>
+</div>
+
+
+

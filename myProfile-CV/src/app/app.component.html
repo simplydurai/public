@@ -1,0 +1,118 @@
+<!-- Navbar -->
+<div class="my-top">
+  <nav class="navbar my-bar my-theme my-top my-large bootsnav" id="navigation-bar">
+      
+    <a href="#" class="my-bar-item my-button my-theme-l1 navbar-brand">MY PROFILE</a>
+    <ul class="navbar-nav nav navigation">
+      <li *ngFor="let menuItem of menu; index as i">
+        <a activeClass="active"
+          class="nav-item nav-link my-bar-item my-button my-hide-small my-hide-medium my-hover-white"
+          href="#{{menuItem.fragment}}">{{ menuItem.displayName
+          }}</a>
+      </li>
+    </ul>
+    <a href="javascript:void(0);" class="my-bar-item  my-hide-large my-hover-white baricon icon"
+    (click)="w3_open()"><i class="fa fa-bars"></i></a>
+  </nav>
+</div>
+
+<!-- Sidebar 1-->
+<div class="my-sidebar my-bar-block my-collapse my-hide-large my-animate-top my-hide-large" id="mySidebar" #mySidebar>
+    <div class="my-row">      
+      <ul class="navbar-nav nav navigation">
+        <li>
+          <div class="my-padding-large my-padding-top-32"><h2>Menu</h2></div>
+          <hr/>
+        </li>
+        <li *ngFor="let menuItem of menu; index as i" class="my-padding-large">
+          <a activeClass="active"
+            class="nav-item nav-link my-bar-item my-button my-hover-white mobile-menu-item"
+            href="#{{menuItem.fragment}}">{{ menuItem.displayName
+            }}</a>
+        </li>
+        <li>
+          <hr/>
+          <button (click)="w3_close()"
+          class="my-button my-right my-xlarge my-padding-16" title="Close Menu">
+          <i class="bi bi-x-square-fill text-primary display-3"></i> Close
+        </button>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<!-- Sidebar 2-->
+<div class="my-sidebar my-bar-block my-collapse my-hide-small my-hide-medium my-theme-l5 my-animate-left my-hide-small my-hide-medium" id="mySidebar1" #mySidebar1>
+  <section class="sidebar" #sidecontainer>
+    <div class="my-row my-padding-top-90">
+      <app-container [title]="''">
+        <app-side-container></app-side-container>
+      </app-container>
+    </div>
+  </section>
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="my-overlay my-hide-large" (click)="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"  #myOverlay></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="my-main" style="margin-left:500px">
+
+  <div class="my-row my-padding-top-90"></div>
+
+  <div class="my-hide-large">
+    <section class="sidebar" #sidecontainer>
+        <app-container [title]="''">
+          <app-side-container></app-side-container>
+        </app-container>
+    </section>
+  </div>
+
+  <section id="home" #home>
+      <app-container [title]="''">
+        <app-intro></app-intro>
+      </app-container>
+  </section>
+
+  <section id="education" #education>
+    <div class="my-row my-padding-top-8">
+      <app-container [title]="''">
+        <app-education></app-education>
+      </app-container>
+    </div>
+  </section>
+
+  <section id="profexp" #profexp>
+    <div class="my-row my-padding-top-8">
+      <app-container [title]="''">
+        <app-proff-exp></app-proff-exp>
+      </app-container>
+    </div>
+  </section>
+
+  <section id="researchexp" #researchexp>
+    <div class="my-row my-padding-top-8">
+      <app-container [title]="''">
+        <app-research-exp></app-research-exp>
+      </app-container>
+    </div>
+  </section>
+
+  <section id="contact" #contact>
+    <div class="my-row my-padding-top-8">
+      <app-container [title]="''">
+        <app-contact-form></app-contact-form>
+      </app-container>
+    </div>
+  </section>
+
+  <div class="bottom-div" >
+    <button class="back-to-top button" (click)="scrollToTop()" [ngClass]="{'show-scrollTop': windowScrolled}">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+  </div>
+</div>
+
+<section id="myFooter">
+  <app-footer></app-footer>
+</section>

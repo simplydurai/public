@@ -1,0 +1,31 @@
+<section id="side-content-sec" class="side-mf">
+  <div class="row">             
+    <div class="col-md-12 p-4">
+
+        <div class="avatardiv">
+          <div class="avatar" data-aos="flip-up" >
+              <img src="{{avatarUrl}}" alt="Avatar"/>
+          </div> 
+          <h1> 
+            {{personaldetails.name}}
+          </h1>
+          <p class="title">{{personaldetails.position}}</p>
+          <div class="detailsdiv flex-column-container flex-justify-centre">
+              <div class="p-1"><span class="m-2"><i class="bi bi-envelope-fill display-10 text-primary"></i></span> <span class="m-2"><b><a href="mailto:{{personaldetails.email}}">{{personaldetails.email}}</a></b></span> </div>
+              <div class="p-1"><span class="m-2"><i class="bi bi-telephone-fill  display-10 text-primary"></i></span> <span class="m-2"><b>{{personaldetails.mobile}}</b></span></div>
+          </div>
+      </div>
+  
+      <p class="downloads flex-row-container flex-justify-centre">
+        <a href="{{resumeDoc}}" class="button" target="_blank"> Download CV as Doc</a>
+        <a href="{{resumePdf}}" class="button" target="_blank"> Download CV as PDF</a>
+      </p>
+  
+      <p>
+        <app-social-sites></app-social-sites>
+      </p>
+      
+        <p><a href="#contact" alt="contact" class="button contactbtn">Contact</a></p>
+      </div>
+      </div>
+</section>

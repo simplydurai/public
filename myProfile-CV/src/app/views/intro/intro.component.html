@@ -1,0 +1,41 @@
+<section id="about-sec" class="container  pt-4">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="about-me pt-4 pt-md-0">
+        <div class="title-box-2">
+          <h5 class="title-left">
+            About me
+          </h5>
+        </div>
+        <p class="lead" *ngFor="let item of aboutMe; index as i">
+          {{item.content}}
+        </p>        
+      </div>
+    </div>
+  </div>
+
+  <div id="expertise-sec" class="colorlib-service">
+    <div class="card">
+      <div class="card-header cardheader">
+        What I do?
+      </div>
+      <div class="card-body">
+        <div class="row row-pt-md flex-row-container flex-justfy-spaceevenly">
+          <div class="col-md-4 text-center" data-aos="flip-up" *ngFor="let item of whatIdo; index as i">
+            <div class="services color-{{i+1}}">
+              <span class="icon">
+                <i class="{{item.icon}}"></i>
+              </span>
+              <div class="desc">
+                <h3>{{item.title}}</h3>
+                <p>{{item.content}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End expertise Section -->
+
+</section><!-- End About Section -->
+

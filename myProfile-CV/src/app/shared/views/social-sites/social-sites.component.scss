@@ -1,0 +1,17 @@
+
+.social-sites {
+  margin: auto;
+}
+
+.social-sites a {
+  padding: 10px;
+  font-size: x-large;
+}
+
+ /* On small screens, set height to 'auto' for sidenav and grid */
+ @media screen and (max-width: 1400px) {
+  .flex-row-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}

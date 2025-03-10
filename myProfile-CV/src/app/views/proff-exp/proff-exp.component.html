@@ -1,0 +1,76 @@
+<section id="profexp-sec" class="container  pt-4">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="pt-4 pt-md-0">
+        <div class="title-box-2">
+          <h5 class="title-left">
+            Professional Experience
+          </h5>
+        </div>
+        <div class="col-md-12 pt-4 pb-4">
+          <div class="card">
+            <div class="card-header cardheader">
+              Skills
+            </div>
+            <div class="card-body">
+              <app-skills></app-skills>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 pt-4 pb-4">
+          <div class="card">
+            <div class="card-header cardheader">
+              Work
+            </div>
+            <div class="card-body">
+              <ul class="cbp_tmtimeline">
+                <li *ngFor="let item of data; index as i">
+                  <time class="cbp_tmtime">
+                    <span>{{getMonthFromDateString(item.dateFrom)}} {{getYearFromDateString(item.dateFrom)}} -
+                      {{getMonthFromDateString(item.dateUntil)}} {{getYearFromDateString(item.dateUntil)}}</span>
+                  </time>
+                  <div class="cbp_tmicon bg-info-{{i}}"><i class="zmdi zmdi-label"></i></div>
+                  <div class="cbp_tmlabel" data-aos="zoom-in">
+                    <div class="cd-timeline-content">
+                      <h2>{{item.company}}</h2>
+                      <div class="timeline-content-info">
+                        <span class="timeline-content-info-title">
+                          <i class="fa fa-certificate" aria-hidden="true"></i>
+                          {{item.jobTitle}}
+                        </span>
+                        <!-- <span class="timeline-content-info-date">
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                June 2016 - Present
+                              </span> -->
+                      </div>
+                      <div *ngIf="item.details.length > 0">
+                        <ul>
+                          <li *ngFor="let detail of item.details; index as i">
+                            <p>
+                              {{detail.content}}
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div *ngIf="item.technologies.length > 0">
+                        <ul class="content-skills">
+                          <li *ngFor="let tech of item.technologies; index as i">
+                            {{tech}}
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div> <!-- cd-timeline-content -->
+
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End ProfessionalExp Section -->

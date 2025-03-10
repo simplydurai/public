@@ -1,0 +1,10 @@
+<div class="social-sites flex-row-container flex-justify-centre">
+    <div  *ngFor="let website of socialsites; let i = index">
+        <a class="align-items-center justify-content-center"
+        target="{{ website.target }}"
+        title="{{ website.title }}"
+        href="{{ website.link }}">
+        <i class="bi bi-{{ website.icon }}"></i>
+    </a>
+    </div>
+</div>

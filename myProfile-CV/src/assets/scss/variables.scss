@@ -1,0 +1,39 @@
+
+:root {
+
+  --site-primary-color:#af851a;
+  --site-secondary-color: #2364aa;
+  --site-text-color: #4e4e4e;
+  
+  --site-color-1: #2c98f0;
+  --site-color-2: #ec5453;
+  --site-color-3: #f9bf3f;
+  --site-color-4: #a84cb8;
+  --site-color-5: #2fa499;
+  --site-color-6: #4054b2;
+  --site-color-7: #e24e42;
+  --site-color-8: #a4d555;
+  --site-color-9: #eb6e80;
+  --site-color-10: #008f95;
+  --site-color-11: #328cc1;
+  --site-color-12: #93c178;
+
+  --toolbar-background-color:#fff;
+  --toolbar-active-link-border-color:#af851a;
+  --edu-odd-background-color:#af851a ;
+  --edu-even-background-color:#2364aa;
+  --box-background-colour: #f0f1f3;
+  --rich-black:#040F16;
+  }
+  
+  $primary: #af851a;
+  $secondary: #2364aa;
+  $btn-color: white !important;
+  $S:     320px;   
+$M:     768px;     
+$L:     1170px;   
+
+  @import 'bootstrap';
+ 
+
+  // #d95d39 #E6B043

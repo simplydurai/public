@@ -1,0 +1,54 @@
+<section id="about-sec" class="container  pt-4">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="about-me pt-4 pt-md-0">
+        <div class="title-box-2">
+          <h5 class="title-left">
+            Research Experience
+          </h5>
+        </div>
+        <div class="col-md-12" *ngIf="publications.length > 0">
+          <div class="card mb-3">
+            <div class="card-header cardheader">Publications</div>
+            <div class="card-body">
+              <div data-aos="zoom-in">
+                <p *ngFor="let pub of publications">
+                  <span class="title"><i><b>{{pub.title}}</b></i>, </span>
+                  <span class="author">{{pub.authorship}}, </span>
+                  <span class="institution">{{pub.publishedBy}}, </span>
+                  <span class="location">{{pub.address}}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-row-container">
+          <div class="flex-item-50 p-1" *ngFor="let item of data; index as i">
+            <div class="card ">
+              <div class="card-header cardheader">{{item.title}}</div>
+              <div class="card-body content">
+                <div data-aos="zoom-in">
+                  <p class="timerange">{{getMonthFromDateString(item.dateFrom)}}
+                    {{getYearFromDateString(item.dateFrom)}} - {{getMonthFromDateString(item.dateUntil)}}
+                    {{getYearFromDateString(item.dateUntil)}}</p>
+                  <h2> <span class="company">{{item.jobTitle}}</span> </h2>
+                  <p class="designation">{{item.company}}</p>
+                  <p class="description"><i>{{item.jobDescription}}</i></p>
+
+                  <div *ngIf="item.details.length > 0">
+                    <ul>
+                      <li *ngFor="let det of item.details">
+                        <p>{{det.content}}</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End reseqarch Section -->

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "profile-tools-926e3": {
+      "hosting": {
+        "esanwebcv": [
+          "profile-tools-926e3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "profile-tools-926e3"
+  }
+}

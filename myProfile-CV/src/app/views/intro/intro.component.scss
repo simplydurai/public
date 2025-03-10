@@ -1,0 +1,231 @@
+.colorlib-narrow-content {
+  padding: 0 2.5em;
+}
+
+@media screen and (max-width: 1400px) {
+  .colorlib-narrow-content {
+    padding: 0;
+  }
+}
+
+.no-gutters {
+  margin: 0;
+  padding: 0;
+}
+
+
+.colorlib-services {
+  padding-top: 4em;
+  padding-bottom: 9em;
+  clear: both;
+  width: 100%;
+  display: block;
+}
+
+
+@media screen and (max-width: 1400px) {
+
+  .colorlib-services {
+    padding-top: 5em;
+    padding-bottom: 8em;
+  }
+}
+
+
+.services {
+  margin-bottom: 30px;
+  padding: 1.5em;
+  -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -ms-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  border-bottom: 2px solid var(--site-color-1);
+}
+
+.services .icon2 {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.services .icon2 i {
+  font-size: 30px;
+  color: var(--site-color-1);
+}
+
+.services h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.services.color-2 {
+  border-bottom: 2px solid var(--site-color-2);
+}
+
+.services.color-2 .icon2 i {
+  color:  var(--site-color-2);
+}
+
+.services.color-3 {
+  border-bottom: 2px solid  var(--site-color-3);
+}
+
+.services.color-3 .icon2 i {
+  color:  var(--site-color-3);
+}
+
+.services.color-4 {
+  border-bottom: 2px solid  var(--site-color-4);
+}
+
+.services.color-4 .icon2 i {
+  color:  var(--site-color-4);
+}
+
+.services.color-5 {
+  border-bottom: 2px solid  var(--site-color-5);
+}
+
+.services.color-5 .icon2 i {
+  color:  var(--site-color-5);
+}
+
+.services.color-6 {
+  border-bottom: 2px solid  var(--site-color-6);
+}
+
+.services.color-6 .icon2 i {
+  color:  var(--site-color-6);
+}
+
+.services {
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .services {
+    margin-bottom: 4em;
+  }
+}
+
+.services .icon {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  display: table;
+  margin: 0 auto;
+  background: var(--site-color-1);
+}
+
+.services .icon:before,
+.services .icon:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: '';
+}
+
+.services .icon:before {
+  top: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 30px 50px;
+  border-color: transparent transparent var(--site-color-1) transparent;
+}
+
+.services .icon:after {
+  bottom: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 50px 0 50px;
+  border-color: var(--site-color-1) transparent transparent transparent;
+}
+
+.services .icon i {
+  font-size: 30px;
+  color: #fff;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.services .desc {
+  margin-top: 60px;
+}
+
+.services .desc h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services.color-2 .icon {
+  background: var(--site-color-2);
+}
+
+.services.color-2 .icon:before {
+  border-color: transparent transparent var(--site-color-2) transparent;
+}
+
+.services.color-2 .icon:after {
+  border-color: var(--site-color-2) transparent transparent transparent;
+}
+
+.services.color-3 .icon {
+  background: var(--site-color-3);
+}
+
+.services.color-3 .icon:before {
+  border-color: transparent transparent var(--site-color-3) transparent;
+}
+
+.services.color-3 .icon:after {
+  border-color: var(--site-color-3) transparent transparent transparent;
+}
+
+.services.color-4 .icon {
+  background: var(--site-color-4);
+}
+
+.services.color-4 .icon:before {
+  border-color: transparent transparent var(--site-color-4) transparent;
+}
+
+.services.color-4 .icon:after {
+  border-color: var(--site-color-4) transparent transparent transparent;
+}
+
+.services.color-5 .icon {
+  background: var(--site-color-5);
+}
+
+.services.color-5 .icon:before {
+  border-color: transparent transparent var(--site-color-5) transparent;
+}
+
+.services.color-5 .icon:after {
+  border-color: var(--site-color-5) transparent transparent transparent;
+}
+
+.services.color-6 .icon {
+  background: var(--site-color-6);
+}
+
+.services.color-6 .icon:before {
+  border-color: transparent transparent var(--site-color-6) transparent;
+}
+
+.services.color-6 .icon:after {
+  border-color: var(--site-color-6) transparent transparent transparent;
+}
+
+.row-pt-md {
+  padding-top: 3em;
+}

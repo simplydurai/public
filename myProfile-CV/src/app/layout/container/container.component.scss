@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .container{
+    max-width: 100%;
+  }
+  
+  .box-shadow-full {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (min-width: 768px) {
+    .box-shadow-full {
+      padding: 1rem;
+    }
+  }
+  

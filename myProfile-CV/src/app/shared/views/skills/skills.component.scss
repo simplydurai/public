@@ -1,0 +1,99 @@
+
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.bar{
+    position: relative; 
+    border: 2px solid; 
+    border-radius: 20px;
+  
+}
+
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+}
+
+.bar-1{
+    border-color: var(--site-color-1);
+}
+
+.bar-1 div{
+    background-color: var(--site-color-1);
+}
+
+.bar-2{
+    border-color: var(--site-color-2);
+}
+
+.bar-2 div{
+    background-color: var(--site-color-2);
+}
+
+.bar-3{
+    border-color: var(--site-color-3);
+}
+
+.bar-3 div{
+    background-color: var(--site-color-3);
+}
+
+.bar-4{
+    border-color: var(--site-color-4);
+}
+
+.bar-4 div{
+    background-color: var(--site-color-4);
+}
+
+.bar-5{
+    border-color: var(--site-color-5);
+}
+
+.bar-5 div{
+    background-color: var(--site-color-5);
+}
+
+.bar-6{
+    border-color: var(--site-color-6);
+}
+
+.bar-6 div{
+    background-color: var(--site-color-6);
+}
+
+.bar-7{
+    border-color: var(--site-color-7);
+}
+
+.bar-7 div{
+    background-color: var(--site-color-7);
+}
+
+.bar-8{
+    border-color: var(--site-color-8);
+}
+
+.bar-8 div{
+    background-color: var(--site-color-8);
+}
+
+#my-bar{
+    animation: my-fill 2s forwards;
+}
+

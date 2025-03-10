@@ -1,0 +1,59 @@
+<section id="contact-sec" class="container pt-4">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="pt-4 pt-md-0 ">
+        <div class="title-box-2">
+          <h5 class="title-left">
+            Contact
+          </h5>
+        </div>
+        <div class="row formDiv">
+          <div class="p-4">
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+              <div class="row mb-3">
+                <label for="name" class="col-sm-3 col-form-label">Name <span class="text-danger">*</span></label>
+                <div class="col-sm-9">
+                  <input type="text" formControlName="name" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f['name'].errors}">
+                  <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                    <div *ngIf="f['name'].errors['required']">Name is required</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="email" class="col-sm-3 col-form-label">Email <span class="text-danger">*</span></label>
+                <div class="col-sm-9">
+                  <input type="email"formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['email'].errors}">
+                  <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                    <div *ngIf="f['email'].errors['required']">Email is required</div>
+                    <div *ngIf="f['email'].errors['email']">Email must be a valid email address</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="contactno" class="col-sm-3 col-form-label">Contact Number</label>
+                <div class="col-sm-9">
+                  <input type="text" formControlName="contactNo" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="content" class="col-sm-3 col-form-label">Content</label>
+                <div class="col-sm-9">
+                  <textarea formControlName="content" class="form-control" rows="9"></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="pt-2 pb-2"> 
+                  <button class="button float-end m-2 resetbtn  btn-sm" type="reset" (click)="resetForm()">Reset</button>
+                  <button class="button float-end m-2  btn-sm" type="submit">Submit</button>                    
+                </div>
+                <div class="m-2 p-3 bg-success text-white col-md-12 rounded text-center" *ngIf="showSuccess"> Successfully submitted</div>  
+                <div class="m-2 p-3 bg-danger text-white col-md-12 rounded text-center" *ngIf="showError"> Problem while processing. Please try again later </div>   
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Contact Section -->

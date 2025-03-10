@@ -1,0 +1,74 @@
+<section id="education-sec" class="container  pt-4">
+	<div class="row">             
+		<div class="col-md-12">
+		  <div class="about-me pt-4 pt-md-0 ">
+			<div class="title-box-2">
+			  <h5 class="title-left">
+				Education
+			  </h5>
+			</div>
+			<!-- Timeline start -->
+			<div class="timeline" *ngFor="let item of data; index as i">
+			  <div class="timeline-row" [class.oddrow]="i%2 == 1" [class.evenrow]="i%2 == 0"  data-aos="flip-up">
+				  <div class="timeline-time">
+					{{item.dateFrom.toDate() | date:'yyyy'}} - {{item.dateUntil? (item.dateUntil.toDate() | date:'yyyy'): 'Current'}}
+				  </div>
+				  <div class="timeline-dot green-one-bg"><i class="bi bi-envelope"></i></div>
+				  <div class="timeline-content colour-{{i+1}}">
+					<div class="title" >
+						<span class="text-wrap fs-5">{{item.degree}}</span>
+					</div>
+					<hr/>
+					<div class="course mt-3 mb-3">
+						{{item.course}}
+					</div>
+					<div class="uniinfo">
+						<div class="institution">
+							{{item.institution}}
+						</div>
+						<div>{{item.address}}</div>
+						<div *ngIf="item.grade.length>0"  class=" mt-3 grade">Grade: {{item.grade}}</div>
+					</div>																	  
+				  </div>
+			  </div>
+		  </div>
+		  <!-- Timeline end -->
+		  </div>
+		</div>
+	  </div>
+</section><!-- End About Section -->
+
+<!-- <div class="timeline-row">
+	<div class="timeline-time">
+		7:45PM<small>May 21</small>
+	</div>
+	<div class="timeline-dot fb-bg"></div>
+	<div class="timeline-content">
+		<h4>Admin theme!</h4>
+		<p>Milestone Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar, drag &amp;
+			drop and ion slider.</p>						
+	</div>
+</div>
+<div class="timeline-row">
+	<div class="timeline-time">
+		8:00 AM<small>May 18</small>
+	</div>
+	<div class="timeline-dot green-one-bg"></div>
+	<div class="timeline-content green-one">
+		<h4>Admin theme!</h4>
+		<p>
+			Milestone Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar.
+		</p>						
+	</div>
+</div>
+<div class="timeline-row">
+	<div class="timeline-time">
+		7:25 PM<small>May 6</small>
+	</div>
+	<div class="timeline-dot green-two-bg"></div>
+	<div class="timeline-content green-two">
+		<h4>Best Admin Template!</h4>
+		<p>Custom C3 graphs, Custom flot graphs, flot graphs, small graphs, Sass, profile and timeline.
+		</p>						
+	</div>
+</div> -->
